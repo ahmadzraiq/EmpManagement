@@ -2,7 +2,7 @@ package EmpManagement;
 
 
 public abstract class EmpManager {
-        String name;
+    String name;
     float aga;
     float data;
     float salary;

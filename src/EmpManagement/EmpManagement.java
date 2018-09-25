@@ -35,7 +35,6 @@ public class EmpManagement {
              le.data=read.nextFloat();
              System.out.println("Enter your salary = ");
              le.salary=read.nextFloat();
-             System.out.println("Enter your salary = ");
              System.out.println("Enter your mp = ");
              le.mp=read.next();
             
