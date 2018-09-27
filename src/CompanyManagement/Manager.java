@@ -1,4 +1,4 @@
-package EmpManagement;
+package CompanyManagement;
 
 import java.util.Scanner;
 
@@ -31,7 +31,7 @@ public class Manager extends Person {
 
 	@Override
 	public String toString() {
-		String department = "The department is" + this.department;
+		String department = "The department is = " + this.department;
 		return super.toString() + department + "\n";
 	}
 

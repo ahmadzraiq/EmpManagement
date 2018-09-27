@@ -1,4 +1,4 @@
-package EmpManagement;
+package CompanyManagement;
 
 public enum PrintType {
 	AllInfo,

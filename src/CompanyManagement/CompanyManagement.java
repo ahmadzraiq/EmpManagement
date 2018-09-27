@@ -1,10 +1,10 @@
-package EmpManagement;
+package CompanyManagement;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class EmpManagement {
+public class CompanyManagement {
 
 	public static void printPeopleData(ArrayList<Employee> employeesList, ArrayList<Manager> managersList,
 			Scanner reader, PrintType printType) {

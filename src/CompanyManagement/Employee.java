@@ -1,4 +1,4 @@
-package EmpManagement;
+package CompanyManagement;
 
 import java.util.Scanner;
 
