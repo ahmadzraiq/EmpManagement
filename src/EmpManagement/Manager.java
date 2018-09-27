@@ -1,44 +1,38 @@
 package EmpManagement;
 
-import java.text.DecimalFormat;
+import java.util.Scanner;
 
 public class Manager extends Person {
+	private String department;
 
-	private double z=0.15d;
-	
-    public void printSalaryAfterTheAddition()
-    {
-        this.salaryAfterTheAddition=salary*z;
-        DecimalFormat money = new DecimalFormat("0.00");
-        System.out.println("The salaryaftertheaddition" + money.format(this.salaryAfterTheAddition));
+	public void setDepartment(String department) {
+		this.department = department;
+	}
 
-    }
-    public void setId(int id) 
-    {
-    	this.id=id;
-    }
-    
-    public void setName(String name)
-    {
-    	this.name=name;
-    }
-    public void setAge(float aga)
-    {
-    	this.age=age;
-    }
-    public void setDateOfEmployment(float dateOfEmployment) 
-    {
-    	this.dateOfEmployment=dateOfEmployment;
-    }
-    public void setSalary(double salary)
-    {
-    	this.salary=salary;
-    }
-    public double getSalary() 
-    {
-    	return this.salary;
-    }
+	public String getDepartment() {
+		return this.department;
+	}
 
-    
+	public Manager() {
+		this.setRatio(0.15);
+	}
+
+	public double getSalaryAfterTheAddition() {
+		return this.getSalary() * this.getRatio();
+	}
+
+	public void readManagerInfo() {
+		super.readPersonInfo();
+		System.out.println("The yore department");
+		Scanner reader = new Scanner(System.in);
+		String department = reader.next();
+		this.department = department;
+	}
+
+	@Override
+	public String toString() {
+		String department = "The department is" + this.department;
+		return super.toString() + department + "\n";
+	}
 
 }
